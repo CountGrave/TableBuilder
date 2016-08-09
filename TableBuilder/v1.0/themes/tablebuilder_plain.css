@@ -1,0 +1,334 @@
+table.tablebuilder{
+
+	font-size:100%; 
+	line-height:1;	
+	display:inline-table;
+	table-layout: fixed;
+	border-collapse: collapse;
+	/*border-top: 1px solid #C9C9C9;*/
+	/*font-family: Arial,sans-serif; font-size: 14px; font-style: normal; font-variant: normal;*/
+}
+table.tablebuilder.stripes, table.tablebuilder.zebra{
+
+	/*border: 1px solid #C9C9C9;*/
+}
+table.tablebuilder caption{
+	padding: 0px;
+	border-top: 1px solid #C9C9C9;
+	border-left: 1px solid #C9C9C9;
+	border-right: 1px solid #C9C9C9;
+	background: rgb(57,145,207);
+	background: rgb(102,102,102);
+	background: -moz-linear-gradient(top,  rgba(102,102,102,1) 0%, rgba(78,78,78,1) 24%, rgba(51,51,51,1) 50%, rgba(69,69,69,1) 79%, rgba(82,82,82,1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(102,102,102,1)), color-stop(24%,rgba(78,78,78,1)), color-stop(50%,rgba(51,51,51,1)), color-stop(79%,rgba(69,69,69,1)), color-stop(100%,rgba(82,82,82,1)));
+	background: -webkit-linear-gradient(top,  rgba(102,102,102,1) 0%,rgba(78,78,78,1) 24%,rgba(51,51,51,1) 50%,rgba(69,69,69,1) 79%,rgba(82,82,82,1) 100%);
+	background: -o-linear-gradient(top,  rgba(102,102,102,1) 0%,rgba(78,78,78,1) 24%,rgba(51,51,51,1) 50%,rgba(69,69,69,1) 79%,rgba(82,82,82,1) 100%);
+	background: -ms-linear-gradient(top,  rgba(102,102,102,1) 0%,rgba(78,78,78,1) 24%,rgba(51,51,51,1) 50%,rgba(69,69,69,1) 79%,rgba(82,82,82,1) 100%);
+	background: linear-gradient(to bottom,  rgba(102,102,102,1) 0%,rgba(78,78,78,1) 24%,rgba(51,51,51,1) 50%,rgba(69,69,69,1) 79%,rgba(82,82,82,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#666666', endColorstr='#525252',GradientType=0 );
+}
+
+table.tablebuilder thead tr{
+
+	/*border-top: 1px solid #00915D;
+	border-bottom: 1px solid #00915D;*/
+}
+/*Solid table*/
+table.tablebuilder tbody tr{
+	
+	vertical-align: middle;
+	margin: 0px;
+	padding:0px;
+	/*background: white;*/
+	border-bottom: 1px solid #D5D5D5;
+}
+/*Striped table*/
+table.tablebuilder.zebra tbody tr, table.tablebuilder.stripes tbody tr{
+	
+	vertical-align: middle;
+	margin: 0px;
+	padding:0px;
+	/*BLUE*/
+	border: 0px;
+	background: rgb(241,241,245);
+	background: -moz-linear-gradient(top,  rgba(241,241,245,1) 0%, rgba(222,224,232,1) 0%, rgba(212,214,224,1) 70%, rgba(235,236,241,1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(241,241,245,1)), color-stop(0%,rgba(222,224,232,1)), color-stop(70%,rgba(212,214,224,1)), color-stop(100%,rgba(235,236,241,1)));
+	background: -webkit-linear-gradient(top,  rgba(241,241,245,1) 0%,rgba(222,224,232,1) 0%,rgba(212,214,224,1) 70%,rgba(235,236,241,1) 100%);
+	background: -o-linear-gradient(top,  rgba(241,241,245,1) 0%,rgba(222,224,232,1) 0%,rgba(212,214,224,1) 70%,rgba(235,236,241,1) 100%);
+	background: -ms-linear-gradient(top,  rgba(241,241,245,1) 0%,rgba(222,224,232,1) 0%,rgba(212,214,224,1) 70%,rgba(235,236,241,1) 100%);
+	background: linear-gradient(to bottom,  rgba(241,241,245,1) 0%,rgba(222,224,232,1) 0%,rgba(212,214,224,1) 70%,rgba(235,236,241,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1f1f5', endColorstr='#ebecf1',GradientType=0 );
+}
+/*Striped table*/
+table.tablebuilder.stripes tr:nth-child(odd){
+	
+	background: white;
+}
+/*Striped table*/
+table.tablebuilder.zebra tr.odd{
+	
+	background: white;
+}
+table.tablebuilder th{
+
+	text-align: left;
+	padding-top:  10px; 
+	padding-bottom: 10px;
+	min-width: 65px;
+	padding-left:  4px !important;
+	padding-right:  4px !important;
+	vertical-align: middle;
+}
+table.tablebuilder th.filter, table.tablebuilder th.search{
+	
+	position: relative;
+}
+
+table.tablebuilder div.tb-searchcontainer{
+	
+	display: none;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	/*border: 2px solid #F0EEEE;*/
+	border-left: 1px solid #00915D;
+	border-right: 1px solid #00915D;
+	border-top: 1px solid #00915D;
+	/*background: #EAF2EF;*/
+	background: rgb(205,205,205);
+	background: -moz-linear-gradient(top,  rgba(205,205,205,1) 0%, rgba(182,182,182,1) 16%, rgba(151,151,151,1) 50%, rgba(184,184,184,1) 83%, rgba(205,205,205,1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(205,205,205,1)), color-stop(16%,rgba(182,182,182,1)), color-stop(50%,rgba(151,151,151,1)), color-stop(83%,rgba(184,184,184,1)), color-stop(100%,rgba(205,205,205,1)));
+	background: -webkit-linear-gradient(top,  rgba(205,205,205,1) 0%,rgba(182,182,182,1) 16%,rgba(151,151,151,1) 50%,rgba(184,184,184,1) 83%,rgba(205,205,205,1) 100%);
+	background: -o-linear-gradient(top,  rgba(205,205,205,1) 0%,rgba(182,182,182,1) 16%,rgba(151,151,151,1) 50%,rgba(184,184,184,1) 83%,rgba(205,205,205,1) 100%);
+	background: -ms-linear-gradient(top,  rgba(205,205,205,1) 0%,rgba(182,182,182,1) 16%,rgba(151,151,151,1) 50%,rgba(184,184,184,1) 83%,rgba(205,205,205,1) 100%);
+	background: linear-gradient(to bottom,  rgba(205,205,205,1) 0%,rgba(182,182,182,1) 16%,rgba(151,151,151,1) 50%,rgba(184,184,184,1) 83%,rgba(205,205,205,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cdcdcd', endColorstr='#cdcdcd',GradientType=0 );
+
+	text-align: center;
+	/*width: 215px;*/
+	width: 190px;
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0eeee', endColorstr='#f0eeee',GradientType=0 );
+}
+table.tablebuilder div.tb-searchcontainer.short{
+	
+	width: 190px;
+
+}
+table.tablebuilder div.tb-searchcontainer div.tb-searchicon{
+
+	border: 2px solid #8B8B8B;
+	width: 22px;
+	height: 22px;
+	vertical-align: middle;
+	background-image: url("img/searchicon_white.png"); 
+	background-repeat: no-repeat; 
+	background-position: left top;
+	display: inline-block;
+	
+}
+table.tablebuilder div.tb-searchcontainer div.tb-searchicon:hover, table.tablebuilder div.tb-searchcontainer div.tb-filtericon:hover{
+
+	cursor: pointer;	
+}
+table.tablebuilder div.tb-searchcontainer div.tb-filtericon{
+
+	margin-left: 4px;
+	border: 2px solid #8B8B8B;
+	width: 22px;
+	height: 22px;
+	vertical-align: middle;
+	/*background-image: url("img/filtericon_white.png");*/
+	background-image: url("img/searchicon_white.png");
+	background-repeat: no-repeat; 
+	background-position: left top;
+	display: inline-block;	
+}
+table.tablebuilder div.tb-searchcontainer input{
+	margin-right: 4px;
+	display: inline-block;
+	width: 138px;
+	height: 24px;
+	border: 2px solid #8B8B8B;
+	vertical-align: middle;
+}
+table.tablebuilder th.filter:hover div.tb-searchcontainer, table.tablebuilder th.search:hover div.tb-searchcontainer, table.tablebuilder div.tb-searchcontainer:hover{	
+
+	display: block;
+	z-index: 2;
+}
+table.tablebuilder th.link_cell{
+	
+	min-width: 10px;
+	
+}
+table.tablebuilder.active th.enabled div.tb-thcontainer:hover{
+	
+	cursor: pointer;
+}
+table.tablebuilder th div.tb-thcontainer{
+	display: table-row;
+	margin: 0px;
+	padding: 0px;
+	/*height: 100px;*/
+}
+table.tablebuilder th div.tb-sorterpic{
+	width: 17px;
+	height: 17px;
+	vertical-align: middle;
+	background-image: url("img/arrowDisabled.png"); 
+	background-repeat: no-repeat; 
+	background-position: left top; 
+}
+
+table.tablebuilder th div.tb-sorterpic.desc{
+
+	background-image: url("img/arrowGreenDesc.png"); 
+}
+table.tablebuilder th div.tb-sorterpic.asc{
+
+	background-image: url("img/arrowGreenAsc.png"); 
+}
+
+table.tablebuilder th.found.selected div.tb-sorterpic{
+
+	background-image: url("img/arrowBlueDesc.png"); 
+}
+table.tablebuilder th.found.selected div.tb-sorterpic.desc{
+
+	background-image: url("img/arrowBlueDesc.png"); 
+}
+table.tablebuilder th.found.selected div.tb-sorterpic.asc{
+
+	background-image: url("img/arrowBlueAsc.png"); 
+}
+
+table.tablebuilder th div.tb-sorterdiv{
+	vertical-align: middle;
+	display: table-cell;
+	padding: 0px;
+	/*padding-right: 2px;	*/
+}
+table.tablebuilder th div.tb-sorterpic{
+	width: 17px;
+	height: 17px;
+	vertical-align: middle;
+	margin-right: 4px;
+	background-image: url("img/arrowDisabled.png"); 
+	background-repeat: no-repeat; 
+	background-position: left top; 
+}
+#tb_keeper{
+}
+table.tablebuilder tr td{
+	padding: 0.35em;
+	/*color: black;*/
+	vertical-align: middle;
+	max-width: 600px;	
+}
+table.tablebuilder tr td.textcell{
+	text-align: left;
+	max-width: 800px;
+}
+
+table.tablebuilder tr td:not(.textcell) p{
+	overflow-y: auto;
+	max-height: 4em;
+	text-overflow: ellipsis;
+	line-height: 1;
+	padding: 0px;
+	/*color: black;*/
+}
+table.tablebuilder tr:hover td:not(.textcell) p{
+	
+	max-height: 8em;
+}
+
+#tb_keeper td{
+	
+	padding: 0px;
+	height: 0px;
+	/*background: #F0EEEE;*/
+}
+table.tablebuilder tr td.tb-sortcell{
+
+	/*background: #D0D0D0;*/
+}
+table.tablebuilder tr td.tb-match{
+
+	background: #D6EFED;
+
+}
+span.highlight{
+    display: inline-block;
+    background: #B2FFE6;
+    padding: 0px;
+    margin:0px;
+}    
+table.tablebuilder tr.hidden{
+	display: none; 	
+}
+table.tablebuilder tr.uhidden{ 
+
+	display: none !important;
+}
+
+p.tb-pagecontainer{	
+	display: block;
+	text-align: center;
+	padding: 0px;
+	margin: 0px;
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3991cf', endColorstr='#2a78ac',GradientType=0 );
+}
+p.tb-pagecontainer span.tb-pagenbr{
+	
+	display: inline-block;
+	margin: 5px;
+	font-family:Helvetica;font-size:16px;font-style:normal;font-weight:normal;text-decoration:none;text-transform:none;color:000000;
+	color: #A2E873;
+	font-size: 14px;
+	padding: 4px;
+	background: #242424;
+	border: 1px solid white;
+	vertical-align: middle;
+}
+p.tb-pagecontainer span.tb-pagenbr:hover{	
+	color: white;
+	cursor: pointer;	
+}
+p.tb-pagecontainer span.tb-pagenbr.selected{
+	color: white;
+	/*font-style: italic;*/
+	text-decoration: underline;
+}
+p.tb-pagecontainer div.tb-next{
+	width: 15px;
+	height: 24px;
+	display: inline-block;	
+}
+p.tb-pagecontainer div.tb-next.active{
+	margin: 5px;
+	vertical-align: middle;
+	width: 15px;
+	height: 24px;
+	background-image: url("img/tbnext_green.png"); 
+	background-repeat: no-repeat; 
+	background-position: left top;
+	display: inline-block;	
+}
+p.tb-pagecontainer div.tb-back{
+	width: 15px;
+	height: 24px;
+	display: inline-block;	
+}
+p.tb-pagecontainer div.tb-back.active{
+	margin: 5px;
+	vertical-align: middle;
+	width: 15px;
+	height: 24px;
+	background-image: url("img/tbback_green.png"); 
+	background-repeat: no-repeat; 
+	background-position: left top;
+	display: inline-block;	
+}
+p.tb-pagecontainer div.tb-next.active:hover, p.tb-pagecontainer div.tb-back.active:hover{
+	cursor: pointer;
+}
